@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tirgul 7 Website</title>
+    </head>
+    <body style="background-color:gainsboro; text-align:center; font-family: Tahoma; margin-top: 10px" >
+        <H1 style="color: blue">Input Summation</H1>
+        <br><br>
+        <form method="POST" action="input_processor">
+            {% csrf_token %}
+            Insert text: <textarea name="input_text" rows="1" cols="80"> </textarea><br>
+            <br>
+              <select name="number" id="numbers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
